@@ -22,24 +22,15 @@ service:
 
 
 # Konga default configuration
-config: {}
-#   port: 1337
-#   node_env: development
-#   ssl_key_path:
-#   ssl_crt_path:
-#   konga_hook_timeout: 60000
-#   db_adapter: postgres
-#   db_uri:
-#   db_host: localhost
-#   db_port: 5432
-#   db_user:
-#   db_password:
-#   db_database: konga_database
-#   db_pg_schema: public
-#   log_level: debug
-#   token_secret:
-#   konga_node_data:
-#   konga_user_data:
+config: 
+  port: 1337
+  node_env: production
+  db_adapter: mysql
+  db_host: 172.17.178.13
+  db_port: 3306
+  db_user: dbadmin
+  db_password: Capt-S@l@z$r
+  db_database: kong
 
 # LDAP configuration for Konga
 ldap: {}
